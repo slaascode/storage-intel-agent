@@ -16,7 +16,7 @@ if prompt := st.chat_input("How can I help with your storage intel?"):
         st.markdown(prompt)
 
     response = get_response(st.session_state.messages)
-
+    
     with st.chat_message("assistant"):
         st.markdown(response)
     st.session_state.messages.append({"role": "assistant", "content": response})
