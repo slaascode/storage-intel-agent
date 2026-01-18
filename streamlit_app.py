@@ -1,7 +1,7 @@
 import streamlit as st
 from main_agent import get_response
 
-st.title("📦 Storage Intel Agent")
+st.title"📦 Storage Intel - Verified"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
