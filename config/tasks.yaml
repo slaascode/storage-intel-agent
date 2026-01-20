@@ -1,0 +1,19 @@
+research_vendor_task:
+  description: >
+    Search for the most recent updates for {vendor} from the last 12 months. 
+    Look specifically for:
+    1. New hardware or software product launches.
+    2. Strategic partnerships or cloud integrations.
+    3. New PDF whitepapers or technical documentation.
+  expected_output: >
+    A list of the top 3-5 most significant updates with source URLs.
+  agent: storage_scout
+
+structure_results_task:
+  description: >
+    Review the research findings. For each update, provide a concise summary 
+    highlighting the technical impact. Format the output in clean Markdown 
+    suitable for a Streamlit dashboard.
+  expected_output: >
+    A categorized report with sections for 'Product Updates', 'Partnerships', and 'Documentation'.
+  agent: technical_summarizer
